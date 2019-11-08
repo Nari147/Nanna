@@ -7,7 +7,7 @@ pipeline
             steps {
                 withMaven(maven : 'maven_3_5_0') 
 				{
-                    echo 'mvn clean compile'
+                    sh 'mvn clean compile'
                 }
             }
         }
@@ -17,7 +17,7 @@ pipeline
             steps {
                 withMaven(maven : 'maven_3_5_0') 
 				{
-                    echo 'mvn test'
+                    sh 'mvn test'
                 }
             }
         }
